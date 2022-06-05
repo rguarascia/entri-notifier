@@ -19,7 +19,7 @@
     "bundle": {
       "active": true,
       "category": "DeveloperTool",
-      "copyright": "",
+      "copyright": "Ryan Guarascia",
       "deb": {
         "depends": []
       },
@@ -32,7 +32,7 @@
         "icons/icon.ico"
       ],
       "identifier": "com.rguarascia.entri-notifier",
-      "longDescription": "",
+      "longDescription": "Entri Notifier is a simple notification system for Entri.",
       "macOS": {
         "entitlements": null,
         "exceptionDomain": "",
@@ -59,9 +59,11 @@
       {
         "fullscreen": false,
         "height": 600,
+        "minHeight": 340,
         "resizable": true,
         "title": "Entri Notifier",
-        "width": 800
+        "width": 800,
+        "minWidth": 240
       }
     ]
   }

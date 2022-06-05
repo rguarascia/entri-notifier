@@ -15,11 +15,6 @@ import { NextUIBadge } from "./components/NextUICustoms";
 function App() {
   const [providers, setProviders] = useState<any>([]);
   const displayNotification = () => {
-    // notification.sendNotification({
-    //   title: "Hello",
-    //   body: "This is a notification",
-    // });
-
     const godaddy = providers.filter(
       (provider: any) => provider.robot_code === "godaddy"
     )[0];
@@ -51,8 +46,14 @@ function App() {
   return (
     <NextUIProvider>
       <Container as={"main"} md fluid>
-        <Text>Hello</Text>
-        <Button onClick={displayNotification}>Click me</Button>
+        <Button
+          onClick={displayNotification}
+          css={{
+            m: "$10",
+          }}
+        >
+          Display notification
+        </Button>
         <Grid.Container gap={2}>
           {providers?.map((provider: any) => (
             <Grid key={provider.robot_code} css={{ w: "200px" }}>
