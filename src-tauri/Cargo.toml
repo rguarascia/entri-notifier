@@ -1,6 +1,6 @@
 [package]
 name = "EntriNotifier"
-version = "0.1.0"
+version = "1.0.0"
 description = "A simple notification system for Entri"
 authors = ["Ryan Guarascia"]
 license = "MIT"
